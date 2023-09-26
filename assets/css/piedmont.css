@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://files.nc.gov/ncdcr/winston-salem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px) brightness(50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.282);
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.homebutton {
+    text-decoration: none;
+    color: #fff
+}
+
+.homebutton:hover {
+    color: #38ffd4
+}
+
+
+
+.nav-links {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    /* smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    /* background-color: rgba(255, 255, 255, 0.1); subtle hover effect */
+    color: #38ffd4;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 825px) {
+    .dropdown-content {
+        left: -60px;
+        /* Move to the left by 30 pixels */
+    }
+
+    #region {
+        font-size: 200%;
+    }
+}
+
+.homepage{
+    text-decoration: none;
+    color: white;
+}
+
+.homepage:hover {
+    color: #38ffd4;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #808080;
+    color: white
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.region h1 {
+    font-size: 500%;
+}
+
+.region {
+    margin-top: 35px;
+    text-align: center;
+    color: rgb(211, 197, 197);
+
+}
+
+.list-group div {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    margin-top: 23px;
+    margin-left: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
